@@ -1,0 +1,38 @@
+html { 
+    background: url(https://i.pinimg.com/564x/46/ac/11/46ac118c37f1ad1d2f68f1ebc0a4e969.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #registrateModal{
+    background: url(https://i.pinimg.com/564x/ea/c2/db/eac2db47284020eb32acf49a22e0418d.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #ingresarModal{
+    background: url(https://i.pinimg.com/564x/ea/c2/db/eac2db47284020eb32acf49a22e0418d.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #micuentaModal{
+    background: url(https://i.pinimg.com/564x/ea/c2/db/eac2db47284020eb32acf49a22e0418d.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #listadeplatillos{
+    background: url(https://i.pinimg.com/564x/a4/1c/c2/a41cc27b46f40e9d3ec98798c93c9bea.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
+  #w{
+      color: white;
+  }

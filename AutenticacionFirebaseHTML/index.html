@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>GHM TATTOO</title>
+    <style>
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DLS EATS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">         
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#micuentaModal">Mi Cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="salir">Salir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#ingresarModal">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registrateModal">Registrate</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal Login-->
+  <div class="modal fade" id="ingresarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formLogin">
+            <div class="row">
+              <div class="col-12 m-2"> 
+                <input type="email" id="correo" required class="form-control" placeholder="Enter your email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 m-2"> 
+                <input type="password" id="contrasena" required class="form-control" placeholder="Enter your password">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 m-2 text-center"> 
+                <Button class="btn btn-primary">Login</Button>
+                <p class="error text-danger"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Register-->
+  <div class="modal fade" id="registrateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="FFF">
+          <form id="formRegister">
+            <div class="row">
+              <div class="col-12 m-2"> 
+                <input type="email" id="rcorreo" required class="form-control" placeholder="Enter your email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 m-2"> 
+                <input type="password" id="rcontrasena" required class="form-control" placeholder="Enter your password">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 m-2 text-center"> 
+                <Button class="btn btn-primary">Register</Button>
+                <p class="error text-danger"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal miCuenta-->
+  <div class="modal fade" id="micuentaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">My Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Information about the account
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center" id="listadeplatillos">
+      <div class="col-12 col-md-4">
+        <img src="https://i.pinimg.com/564x/0f/e8/82/0fe882e4bf9dc167fd0498458c6219c3.jpg" alt="Pizza" height="350" width="150">
+        <p id="w">Pepperoni Pizza</p>
+        <p id="w">$89</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://i.pinimg.com/564x/ee/8b/47/ee8b47a20f157bf80ac04c8ef14b754d.jpg" alt="Pizza" height="350" width="150">
+        <p id="w">Pineapple Pizza</p>
+        <p id="w">$139</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://i.pinimg.com/564x/39/6a/16/396a16397a2dab050d3a114d937cc99c.jpg" alt="Pizza" height="350" width="150">
+        <p id="w">Pizza de Carnes frias</p>
+        <p id="w">$149</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+      apiKey: "AIzaSyDeNJ6_DbO6PToRFiHVL80nguSzRHNbaBM",
+      authDomain: "authorization-87d29.firebaseapp.com",
+      projectId: "authorization-87d29",
+      storageBucket: "authorization-87d29.appspot.com",
+      messagingSenderId: "31706215936",
+      appId: "1:31706215936:web:fba73dda9dfa44aabbcae5"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+
+      const db = firebase.firestore();
+    </script>
+
+    <script src="scripts/autorizacion.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
